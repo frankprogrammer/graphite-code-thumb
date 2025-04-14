@@ -12,13 +12,13 @@ This keymap combines the following features to optimize for coding comfort.
 
 I use the [Graphite keyboard layout](https://github.com/rdavison/graphite-layout). I originally used Colemak DH, which was a massive improvement over QWERTY, but still had some awkward combinations. Graphite has a more balanced hand and finger usage than Colemak and it feels like it has some nice rolls in it too.
 
-After a year of optimizing my keymap I realized that the last area of discomfort was my thumbs. It turns out that moving your thumb inwards towards your index finger is not natural. My goal was to make it so my thumbs would need minimal lateral movement. 
+After two years of optimizing my keymap I realized that the last area of discomfort was my thumbs. It turns out that moving your thumb inwards under your index finger is not comfortable. My goal was to make it so my thumbs would need minimal lateral movement. If you are experiencing any pain in your thumbs with split keyboards, I guarantee that this mapping is the solution.
 
-The **LT 1** and **LT 2** keys will change layers to [Navigation](#1-navigation--numpad) or [Code](#2-code--symbols) while held individually. The **Backspace** and **Space** keys are triggered when tapped. 
+The **Backspace** and **Space** keys are triggered when tapping the inner thumb keys. Holding the same keys will activate the **LT 1** and **LT 2** keys to change layers to [Navigation](#1-navigation--numpad) or [Code](#2-code--symbols). My [Vial Settings](#firmware) make it so this tap/hold functionality works 100% of the time even when toggling layers at high speeds. 
 
 Having **Enter** at the top feels comfortable and makes it so I need one less thumb key.
 
-**MO(4)** triggers the [Home Row Mods layer](#4-home-row-mods) while held.
+**MO(4)** activates the [Home Row Mods layer](#4-home-row-mods) while held.
 
 ## 1: Navigation / Numpad
 
@@ -28,7 +28,7 @@ When using a split keyboard, it is important that all of the navigation keys are
 
 I also put **Enter** on the left half for rare cases when I need to press it while my right hand is on the mouse.
 
-Pressing the **LT 3** thumb key on the right (at this point I am still holding the left layer key) will toggle the [Uppercase layer](#3-graphite-upper).
+Holding the **LT 3** thumb key on the right (at this point I am still holding the left layer key) will toggle the [Uppercase layer](#3-graphite-upper).
 
 This layer also includes Home Row Mods on the right half to use mainly with the arrow keys but also for common combos like **Ctrl +** and **Ctrl -**.
 
@@ -46,7 +46,7 @@ This results in the home row being **<pre>( ) { } &      ^ " ' : ;</pre>**
 
 Having the **=** and **-** keys also on this layer is must for coding and it feels way better on the left side in this case. It lets me type common bigrams like **->**, **>=**, and **<=** quickly.
 
-Pressing the **LT 3** thumb key on the left (at this point I am still holding the right layer key) will toggle the Uppercase layer. I can let go of both thumb keys and type a single uppercase letter or hold both to continue typing in uppercase.
+Holding the **LT 3** thumb key on the left (at this point I am still holding the right layer key) will toggle the Uppercase layer. I can let go of both thumb keys and type a single uppercase letter or hold both to continue typing in uppercase.
 
 <img src="images/graphite-code-tap-dance.png" alt="graphite layout" width="400"/>
 
@@ -54,13 +54,13 @@ Pressing the **LT 3** thumb key on the left (at this point I am still holding th
 
 <img src="images/graphite-code-3.png" alt="graphite layout" width="600"/>
 
-Keeping the uppercase letters on a separate layer triggered by the thumbs allows me to touch type as normal since I don't have to worry about holding a different **Shift** combo other than the two thumb keys I am already using. I put the backspace here since it became an issue not having it while typing constants in all caps. You pretty much never hit Enter when typing in all caps too.
+Keeping the uppercase letters on a separate layer activated by the thumbs allows me to touch type as normal since I don't have to worry about holding a different **Shift** combo other than the two thumb keys I am already using. I put the **Backspace** here since it became an issue not having it while typing constants in all caps. You pretty much never hit Enter when typing in all caps too.
 
 ## 4: Home Row Mods
 
 <img src="images/graphite-code-4.png" alt="graphite layout" width="600"/>
 
-[Home Row Mods](https://precondition.github.io/home-row-mods) put your Shift, Ctrl, Alt, and Windows/CMD key on the 8 keys your fingers rest on when touch typing. Tapping the key triggers the normal letter, but holding it activates the modifier. This is amazing for keyboards of any size but it also introduces issues like misfires and adding a slight delay to the keys they are on. These issues drove me insane and so the perfect solution was to just put them on a separate layer that was easily accessible.
+[Home Row Mods](https://precondition.github.io/home-row-mods) put your Shift, Ctrl, Alt, and Windows/CMD key on the 8 keys your fingers rest on when touch typing. Tapping the key triggers the normal letter, but holding it activates the modifier. This is amazing for keyboards of any size but it also introduces issues like misfires when rolling keys and adding a slight delay to the keys they are on. These issues drove me insane and so the perfect solution was to just put them on a separate layer that was easily accessible.
 
 ## 5: Misc
 
