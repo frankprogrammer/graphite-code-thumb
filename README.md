@@ -78,7 +78,7 @@ Here are my QMK settings with Tapping Force Hold being a must to get the thumb l
 
 - [Download my Vial saved layout](ferris-sweep-vial.vil) - Requires downloading the Vial app
 
-### Compiling VIAL (Coming Soon)
+### Compiling Vial
 
 If you do not see the QMK Settings tab in Vial or if your keyboard doesn't support Vial by default, you will need to recompile the firmware. 
 
@@ -88,6 +88,11 @@ Add this flag in your keyboard's rules.mk file:
 
 ```
 QMK_SETTINGS = yes
+```
+
+My command to compile in QMK MSYS:
+```
+qmk compile -kb ferris/sweep -km vial -e CONVERT_TO=blok
 ```
 
 ## Hardware
