@@ -70,7 +70,7 @@ I do not actually use this layer, but I wanted to include a layer where I think 
 
 ## Firmware
 
-If you own a wired keyboard, then [Vial](https://get.vial.today/) is a must-have. I wasted so much time tweaking the QMK firmware myself and then using VIA. You can configure a lot of the QMK settings from within Vial instantly and you don't need to manually type key codes like in VIA.
+If you own a wired keyboard, then [Vial](https://get.vial.today/) is a must-have. I wasted so much time tweaking the QMK firmware myself and then using VIA. Vial is a fork of the [QMK Firmware](https://github.com/qmk/qmk_firmware) that allows you to configure a lot of the QMK settings from within a GUI instantly and you don't need to manually type key codes like in VIA.
 
 Here are my QMK settings with Tapping Force Hold being a must to get the thumb layer switching working 100%:
 
@@ -80,7 +80,11 @@ Here are my QMK settings with Tapping Force Hold being a must to get the thumb l
 
 ### Compiling VIAL (Coming Soon)
 
-If you do not see the QMK Settings tab in Vial, it means that you will need to recompile the firmware with this flag in your rules.mk file:
+If you do not see the QMK Settings tab in Vial or if your keyboard doesn't support Vial by default, you will need to recompile the firmware. 
+
+Download the [Vial GitHub repository](https://github.com/vial-kb/vial-qmk) and then follow [This Guide](https://docs.qmk.fm/newbs_getting_started).
+
+Add this flag in your keyboard's rules.mk file:
 
 ```
 QMK_SETTINGS = yes
