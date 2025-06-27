@@ -157,7 +157,31 @@ Add this to your VS Code settings.json (Ctrl+Shift+P then Open User Settings(JSO
 	"<C-f>": false,
 	"<C-p>": false,
 },
+"vim.normalModeKeyBindingsNonRecursive": [ 
+    // default vim undo/redo is horrible, so just use VSCode's
+     { 
+         "before": ["u"], 
+         "after": [],
+         "commands": [
+             {
+                 "command": "undo", 
+                 "args": []
+             }
+         ] 
+     },
+     { 
+         "before": ["<C-r>"], 
+         "after": [],
+         "commands": [
+             {
+                 "command": "redo", 
+                 "args": []
+             }
+         ] 
+     },  
+ ],
 "vim.visualModeKeyBindingsNonRecursive": [
+    // default vim paste clears the clipboard, so just flip the behavior
     {
         "before": ["p"],
         "after": ["P"]
@@ -167,4 +191,5 @@ Add this to your VS Code settings.json (Ctrl+Shift+P then Open User Settings(JSO
         "after": ["p"]
     }
   ],
+  "editor.lineNumbers": "relative",
 ```
