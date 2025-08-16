@@ -42,7 +42,7 @@ QMK does not allow you to use the Mod Tap functionality on Shifted keys, but I w
 
 **TD(0)** is defined in Vial as **"** on tap and **Shift** on Hold. **TD(1)** is defined as **:** on tap and **Alt** on hold. 
 
-This results in the home row being **<pre>( ) { } &      ^ " ' : ;</pre>**
+This results in the home row being **<pre>( ) { } &      # " ' : ;</pre>**
 
 Having the **=** and **-** keys also on this layer is must for coding and it feels way better on the left side in this case. It lets me type common bigrams like **->**, **>=**, and **<=** quickly.
 
@@ -62,11 +62,13 @@ Keeping the uppercase letters on a separate layer activated by the thumbs allows
 
 [Home Row Mods](https://precondition.github.io/home-row-mods) put your Shift, Ctrl, Alt, and Windows/CMD key on the 8 keys your fingers rest on when touch typing. Tapping the key triggers the normal letter, but holding it activates the modifier. This is amazing for keyboards of any size but it also introduces issues like misfires when rolling keys and adding a slight delay to the keys they are on. These issues drove me insane and so the perfect solution was to just put them on a separate layer that was easily accessible.
 
+I also put Ctrl on the thumb for more comfort when hitting Ctrl-U and Ctrl-D a lot for half-page up/down in nvim. Alt + Backspace on the thumb is nice for doing a color fill in Affinity Photo 2 or Photoshop. I made the [Misc layer](#5-misc) a one shot so you can take a screenshot or do whatever and then be back at layer 0.
+
 ## 5: Misc
 
 <img src="images/graphite-code-5.png" alt="graphite layout" width="600"/>
 
-I do not actually use this layer, but I wanted to include a layer where I think you could put any extra random things.
+I use this layer for print screen and F6 mostly. I can press the TO(5) button on the right thumb to keep this layer locked in for WASD movement in game engines. 
 
 ## Firmware
 
@@ -119,6 +121,8 @@ qmk compile -kb ferris/sweep -km vial -e CONVERT_TO=blok
 - [Apple Magic Trackpad](https://www.amazon.com/dp/B0DL6L6HPG) - I have tried every conceivable type of "mouse" and this is the only thing that doesn't hurt after long-term use. Tented at 40 degrees.
 
 - [VIVO Keyboard Tray](https://www.amazon.com/dp/B07HFDJCSL) - Having your arms and legs bent at 90 degrees is crucial for ergonomics. The only way most of us can do this is with a keyboard tray. Once you introduce tenting, it makes a tray more necessary.
+
+- [Koolertron 23 Key Keyboard](https://www.amazon.com/dp/B07RM1TBR8) - This is what I actually use for gaming. It comes with linear red switches and even came with an extra set of high quality white PBT keycaps. The best part is that it has full QMK layer support in VIAL!
 
 ## Resources
 
