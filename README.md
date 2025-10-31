@@ -40,7 +40,7 @@ The 8 symbols on the home row locations are my most used coding symbols.
 
 QMK does not allow you to use the Mod Tap functionality on Shifted keys, but I was able to implement the Home Row Mods using Tap Dance keys.
 
-**TD(0)** is defined in Vial as **"** on tap and **Shift** on Hold. **TD(1)** is defined as **:** on tap and **Alt** on hold. 
+**TD(0)** is defined in Vial as **!** on tap and **Shift** on Hold.
 
 This results in the home row being **<pre>( ) { } &      # " ' : ;</pre>**
 
@@ -60,7 +60,7 @@ Keeping the uppercase letters on a separate layer activated by the thumbs allows
 
 <img src="images/graphite-code-4.png" alt="graphite layout" width="600"/>
 
-[Home Row Mods](https://precondition.github.io/home-row-mods) put your Shift, Ctrl, Alt, and Windows/CMD key on the 8 keys your fingers rest on when touch typing. Tapping the key triggers the normal letter, but holding it activates the modifier. This is amazing for keyboards of any size but it also introduces issues like misfires when rolling keys and adding a slight delay to the keys they are on. These issues drove me insane and so the perfect solution was to just put them on a separate layer that was easily accessible.
+[Home Row Mods](https://precondition.github.io/home-row-mods) normally put your Shift, Ctrl, Alt, and Windows/CMD key on the 8 keys your fingers rest on when touch typing. Tapping the key triggers the normal letter, but holding it activates the modifier. Since I want to hold my arrow keys on my navigation layer, I decided to move my Home Row Mods down one row. This allows me to mirror the mods on both sides of my Navigation and Code layers. This is amazing for keyboards of any size but it also introduces issues like misfires when rolling keys and adding a slight delay to the keys they are on. These issues drove me insane and so the perfect solution was to just put them on a separate layer that was easily accessible.
 
 I also put Ctrl on the thumb for more comfort when hitting Ctrl-U and Ctrl-D a lot for half-page up/down in nvim. Alt + Backspace on the thumb is nice for doing a color fill in Affinity Photo 2 or Photoshop. I made the [Misc layer](#5-misc) a one shot so you can take a screenshot or do whatever and then be back at layer 0.
 
@@ -120,6 +120,8 @@ qmk compile -kb ferris/sweep -km vial -e CONVERT_TO=blok
 
 - [Apple Magic Trackpad](https://www.amazon.com/dp/B0DL6L6HPG) - I have tried every conceivable type of "mouse" and this is the only thing that doesn't hurt after long-term use. Tented at 40 degrees.
 
+- [Logitech MX Vertical](https://www.amazon.com/dp/B07FNJB8TT) - I use this for more precision work or 3D editor work. The Razer Pro Click V2 Vertical is on my wishlist to check out as a replacement.
+
 - [VIVO Keyboard Tray](https://www.amazon.com/dp/B07HFDJCSL) - Having your arms and legs bent at 90 degrees is crucial for ergonomics. The only way most of us can do this is with a keyboard tray. Once you introduce tenting, it makes a tray more necessary.
 
 - [Koolertron 23 Key Keyboard](https://www.amazon.com/dp/B07RM1TBR8) - This is what I actually use for gaming. It comes with linear red switches and even came with an extra set of high quality white PBT keycaps. The best part is that it has full QMK layer support in VIAL!
@@ -144,56 +146,4 @@ qmk compile -kb ferris/sweep -km vial -e CONVERT_TO=blok
 
 - [SpeedTyper.dev](https://speedtyper.dev/)
 
-## Vim Motions in VSCode
-
-After learning Colemak and Graphite, I knew that my code navigation skills needed to be optimized. Even if you learn every hotkey in VSCode, there is only so much it can do. To unlock true optimization you need to use [Vim Motions](https://www.youtube.com/watch?v=lWTzqPfy1gE). I just use the arrow keys on Layer 1 to move around instead of **H, J, K, L**. 
-- [CVim extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cuixiaorui.cvim&ssr=false#overview) - Supports the flash.nvim plugin of nvim. This is a game changer. 
-
-- [Info page for CVim extension](https://github.com/VSCodeVim/Vim/issues/8567) - Check out everything this extension can do.
-
-Add this to your VS Code settings.json (Ctrl+Shift+P then Open User Settings(JSON)):
-```
-"vim.flash.enable": true,
-"vim.useSystemClipboard": true,
-"vim.handleKeys": {
-	"<C-w>": false,
-	"<C-b>": false,
-	"<C-f>": false,
-	"<C-p>": false,
-},
-"vim.normalModeKeyBindingsNonRecursive": [ 
-    // default vim undo/redo is horrible, so just use VSCode's
-     { 
-         "before": ["u"], 
-         "after": [],
-         "commands": [
-             {
-                 "command": "undo", 
-                 "args": []
-             }
-         ] 
-     },
-     { 
-         "before": ["<C-r>"], 
-         "after": [],
-         "commands": [
-             {
-                 "command": "redo", 
-                 "args": []
-             }
-         ] 
-     },  
- ],
-"vim.visualModeKeyBindingsNonRecursive": [
-    // default vim paste clears the clipboard, so just flip the behavior
-    {
-        "before": ["p"],
-        "after": ["P"]
-    },
-    {
-        "before": ["P"],
-        "after": ["p"]
-    }
-  ],
-  "editor.lineNumbers": "relative",
-```
+- [gittype](https://github.com/unhappychoice/gittype) - This recently replaced SpeedTyper for me. It uses actual repositories to practice on.
