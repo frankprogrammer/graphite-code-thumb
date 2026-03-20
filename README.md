@@ -114,7 +114,7 @@ qmk compile -kb ferris/sweep -km vial -e CONVERT_TO=blok
 
 - [Chosfox Keycaps](https://www.amazon.com/dp/B0CP28G897) - My old keycaps that felt great.
 
-- [UGREEN MagSafe Stand](https://www.amazon.com/dp/B0CMHT5LZ5) - Comes with MagSafe sticker to attach to the back of your keyboard. Extremely strong, I use this for my iPad with no worries or movement. I tent everything at 45 degrees (Use the Measure app on your phone to level this).
+- [UGREEN MagSafe Stand](https://www.amazon.com/dp/B0CMHT5LZ5) - Comes with MagSafe sticker to attach to the back of your keyboard. Extremely strong, I use this for my iPad with no worries or movement. I tent everything at 55 degrees (Use the Measure app on your phone to level this).
 
 - [90 degree TRRS Cable](https://www.amazon.com/dp/B0C7P6VHZM)
 
